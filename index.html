@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <!-- navbar -->
+     <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "img/logoamorgraphics.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">Amordeus</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <img class="iconn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5ElEQVR4nO3WrwrCQBzA8W+waFVQo/gIJpPB4hCsgqBPYDHrA4gvIZh8g3UNaza7OLOCYeDfiXBBLN7N305Bv3Dtx3243WCDX20OhGqtgOYn4BA4AUUsN1H4wDbcULBnG04BAXABsrZxV526YxvuPr1sUmv2Ci7EBG90Tr2MAR7rwKMY4JYOXBFGr0BOB04AO0F4gUFTQXhoArcF4aoJnAHOAmgAJDHME4BdItQXgHtR4DywfwPdAmkiVlaP/GgAHtQPRikq+rvV1dfFBxyBOe38h/tbC8x9P+yoTe+b1QTm/mGlGw7LH6npIjrWAAAAAElFTkSuQmCC">
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <img class="iconn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABB0lEQVR4nO2Wv0rDUBSHv07FyaXNG3TQp3AUx+LWbp26qxAnQ9yK6FtJ/xALvoLOMWk6iFolcAJFmntv/lwdmg9+cCDn5CMHchNo2GccwAeegAQIgRlwARxu9aX1pVwLpTeQ2W5R6TkQA985eQFOJK+KvgjoF5FuFDfL8i7R9X2ZyB3Nk5bNm27tvgVpFk8lXloUByrxyqI4/i9xpBJPLYofVeJri2JX9zqtLUgToIMGz4L4BgPacj7XJX0GDjDkuKaVpys+MpVmDA3P7LykswNK4lYQX1GRhxLSe2qgBdwVkE5kpjZuq36BqjACPnYIP4ExljmTf6tMmtan/BE9YA4spG5o4Dc/1PhvV2sxcn4AAAAASUVORK5CYII=">
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <img class="iconn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO2Wz0pCQRjFf2i6ydop9ArZO1T7FhrlK0TSH+spxNcw61GCaJMFJZn71rqolfHBufBtwjtzLxLkgYELM+ecud98cxhY4Q+hDLSAW+ANmGnY90BztiZXHAIfwHzBGAPNPAwLQM8JPwEXwDawrlEHLoGhW9cVNxo9CX0BJwvEbO5UaxPz6PLOJbQbwNtz5o1Q07I7U/vTULTFfQdKIcSWO9OYsyoCz9I4CiHeiXROPDrSuAkhjUSy7o1FXRp2z1NjKlIlg/GGNKbLNt6MMR7lUOod19mpMRDJEikW19Lox1ynYYbr9CKN49AAGYtoMRiKM3EnwFooueki02IwLfaBb3EPiETXmbdVwt9Q1J8mpp9ANda44MznisGOwqGiYd175c40MU3W18iAhq7FoofAROWtuqzObF5S4Fv2vioYZtpQX93rG6mWp3koqu5lYpvd4r+Y11zZH5ZpnJg/AvfLNl4Bww/dcoIlpDH7/gAAAABJRU5ErkJggg==">
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#blogs">blogs</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">about us</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#popular">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+     <!-- header -->
+     <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center carousel-item active">
+                <h2 class = "text-capitalize text-white">best collection</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class = "text-center carousel-item">
+                <h2 class = "text-capitalize text-white">best price & offer</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new season</h1>
+                <a href = "#" class = "btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class = "carousel-control-prev" type = "button" data-bs-target="#header" data-bs-slide = "prev">
+            <span class = "carousel-control-prev-icon"></span>
+        </button>
+        <button class = "carousel-control-next" type = "button" data-bs-target="#header" data-bs-slide = "next">
+            <span class = "carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+     <!-- collection -->
+     <section id = "collection" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center">
+                <h2 class = "position-relative d-inline-block">New Collection</h2>
+            </div>
+
+            <div class = "row g-0">
+                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">All</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Featured</button>
+                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">New Arrival</button>
+                </div>
+
+                <div class = "collection-list mt-4 row gx-0 gy-3">
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/download (5).jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Dress</p>
+                            <span class = "fw-bold">Rp 150.000</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/download (2).jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">One set</p>
+                            <span class = "fw-bold">Rp 200.000</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/download (3).jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">One set</p>
+                            <span class = "fw-bold">Rp 200.000</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/download (4).jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">Dress</p>
+                            <span class = "fw-bold">Rp 150.000</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/ootd hijabers.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">One set hijab</p>
+                            <span class = "fw-bold">$ 250.000</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/5 Inspirasi Mix and Match ala Hijab Influencer untuk ke kampus, Simple dan Stylish.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">One set hijab</p>
+                            <span class = "fw-bold">$ 250.000</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/Mix n Match Baju Hijab Casual Untuk Para Muslimah.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">One set hijab</p>
+                            <span class = "fw-bold">$ 250.000</span>
+                        </div>
+                    </div>
+
+                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
+                        <div class = "collection-img position-relative">
+                            <img src = "img/OUTFIT HIJAB CASUAL.jpg" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class = "text-center">
+                            <div class = "rating mt-3">
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                                <span class = "text-primary"><i class = "fas fa-star"></i></span>
+                            </div>
+                            <p class = "text-capitalize my-1">One set hijab</p>
+                            <span class = "fw-bold">$ 250.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+
+      <!-- special products -->
+      <section id = "special" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Special Selection</h2>
+            </div>
+
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "img/The Story Of Janeta.jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <img class="love" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFBUlEQVR4nO2Yy27idhSHXalV1UXVbkdtNYRLriQD2NwDBmPA3OyQkAtU6jxCX6HNVO17TLuZdt6hVaVMOlLb/UTqZorNHRs7mkySKqeyCSSADQaSSRb8pLO1vvP57+NjI8gss8wyyyy3HSmztybRhX2JyR9KmTwrZfKnYnqXldJ7B1J6Z/84uW0b95p8hLbzBPOEJ+gDIZxhm6HMKY+nWT6UOuTx1LfNYGJ1anBhY9d0TBeeS0zh4pgpwDGdBykj1x5Iabl2QUrtgJjcgVZi+1eR2sZHghN0WCDo3wSCAYGggQ/LlQE+lAEeTyvVDKagEUxdNAOJn/lAdG4i+OONL2PHdJ7vgLfh9y7hZfAreDGxrVSLyl2I1NbTJrn9yQA4znzKE8xPQkQG78Bn2uChK3ClAsl2rSeg7os36/5YdGx4iSmcj7IuJtvgYiIHIpWDVnxLKSG2+UokN5Y61xMJepknmKNR1pvBK/CGXy4KGr441D2x87pbZxPtY5Pne6ynta3L4CLVBm/FNtsVzUKLzIpCdCMmkExciDCiDN8DPsR64xK84ZUrBnVPFGoussG744bR9unC817ru+rWqV7rbfA2vEBuKMVHmBOeYE70W6euwceg4YlB3R2FupuEuouEGkY80zFt8hfDrec0rQvkJXxELpXjomZ9PaFpXYF3kVB3RqDmJKCKERcNDLcOaSD/RPUhHWo922O99yHtt651XKiu9XqfdQUeI6CGhttlx7/RbiC9+8edWfeoW+/CO0JQtYegagseajYgpnZLw61v6rMemtC6S7Yug/dZV+BxqNpwqKwFWe0GkjunWqNR3TpzQ9bJ3uPSb12BD0L1UQAqa4FTzQZaiVxZl/WIlvX0GNajQ61XHdfBO/DrUF71c9p3IJE7nNg6rmHdfyPWobK6DpVVP5St/gPtOxDf+mHghXQT1r06rDu0rSvwVj9UVnxQWvZ+p90AlfX0WtczGkdZH3whqVvHlYdUzboMX17xQXnZC6Vlj0uzAaUJMvuntvXJ1gBt66EB6wp4n/XyileBLy+5/0JGRSCye/qtqy9fU1u3ytZ9XevlJY9S3IIrN7IBQJD3eIJ+oWv5Wtdh3Tm+9XIHvAO/6JbhX8psiN6vpWY4c6ZqfZo1YALrJRl+3nnOLTgxXfDdJkLp76ddvrRH43Xrfk3rpQW5XFCyYPtjwStHCcff5/Hk7+NZjwy3rjYarX3WF9vWFfB5J3AW7AWg6AfIJKkTqc+a64nSVMtXv3WV0Vi+hL8Cv4Q3Y2x1EX2ATBP574D8XTrp8jWJ9ZLFCawJbRUtzrH/dqg34aHwhid+Mu0aoMu6BQPOjJ5wFnsQucnU3CRdc0XPp1kDeq27B6xzZgxYs+M/bg7bulH4bhNOslBzRs4mXQOuj8ZB6xiwRvSMNdryyG2mioZSNUf4zcTWFwatc2YUOKPjLWt0ZG8VvtuEPRys2PDWxNYtV9Y5EwrsnEMqGu2RdwLfbWI14KisBYrDl68h1k0ocCYHcHOOf4sPH93MtBm7CTTwoGL1vxy2Bgxal8GVIwPsnP3vogn7ArnLHJmpD0vLvqeaa4BiHeu1rsDbnr3+3PMRcl9SWfR8VV50vxlp3WB/yxpsX+veLN9limavnZt3HmlaN9hfFR+u2ZH7nNqC72PWgv7Yd9Zl+F/+MaIDv93vbTgj+lieMKzB9rposD2+a55ZZpllFuRW8j+fN/ZtJnG/2QAAAABJRU5ErkJggg==">
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">One set</p>
+                        <span class = "fw-bold d-block">Rp 200.000</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "img/l.jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <img class="love" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFBUlEQVR4nO2Yy27idhSHXalV1UXVbkdtNYRLriQD2NwDBmPA3OyQkAtU6jxCX6HNVO17TLuZdt6hVaVMOlLb/UTqZorNHRs7mkySKqeyCSSADQaSSRb8pLO1vvP57+NjI8gss8wyyyy3HSmztybRhX2JyR9KmTwrZfKnYnqXldJ7B1J6Z/84uW0b95p8hLbzBPOEJ+gDIZxhm6HMKY+nWT6UOuTx1LfNYGJ1anBhY9d0TBeeS0zh4pgpwDGdBykj1x5Iabl2QUrtgJjcgVZi+1eR2sZHghN0WCDo3wSCAYGggQ/LlQE+lAEeTyvVDKagEUxdNAOJn/lAdG4i+OONL2PHdJ7vgLfh9y7hZfAreDGxrVSLyl2I1NbTJrn9yQA4znzKE8xPQkQG78Bn2uChK3ClAsl2rSeg7os36/5YdGx4iSmcj7IuJtvgYiIHIpWDVnxLKSG2+UokN5Y61xMJepknmKNR1pvBK/CGXy4KGr441D2x87pbZxPtY5Pne6ynta3L4CLVBm/FNtsVzUKLzIpCdCMmkExciDCiDN8DPsR64xK84ZUrBnVPFGoussG744bR9unC817ru+rWqV7rbfA2vEBuKMVHmBOeYE70W6euwceg4YlB3R2FupuEuouEGkY80zFt8hfDrec0rQvkJXxELpXjomZ9PaFpXYF3kVB3RqDmJKCKERcNDLcOaSD/RPUhHWo922O99yHtt651XKiu9XqfdQUeI6CGhttlx7/RbiC9+8edWfeoW+/CO0JQtYegagseajYgpnZLw61v6rMemtC6S7Yug/dZV+BxqNpwqKwFWe0GkjunWqNR3TpzQ9bJ3uPSb12BD0L1UQAqa4FTzQZaiVxZl/WIlvX0GNajQ61XHdfBO/DrUF71c9p3IJE7nNg6rmHdfyPWobK6DpVVP5St/gPtOxDf+mHghXQT1r06rDu0rSvwVj9UVnxQWvZ+p90AlfX0WtczGkdZH3whqVvHlYdUzboMX17xQXnZC6Vlj0uzAaUJMvuntvXJ1gBt66EB6wp4n/XyileBLy+5/0JGRSCye/qtqy9fU1u3ytZ9XevlJY9S3IIrN7IBQJD3eIJ+oWv5Wtdh3Tm+9XIHvAO/6JbhX8psiN6vpWY4c6ZqfZo1YALrJRl+3nnOLTgxXfDdJkLp76ddvrRH43Xrfk3rpQW5XFCyYPtjwStHCcff5/Hk7+NZjwy3rjYarX3WF9vWFfB5J3AW7AWg6AfIJKkTqc+a64nSVMtXv3WV0Vi+hL8Cv4Q3Y2x1EX2ATBP574D8XTrp8jWJ9ZLFCawJbRUtzrH/dqg34aHwhid+Mu0aoMu6BQPOjJ5wFnsQucnU3CRdc0XPp1kDeq27B6xzZgxYs+M/bg7bulH4bhNOslBzRs4mXQOuj8ZB6xiwRvSMNdryyG2mioZSNUf4zcTWFwatc2YUOKPjLWt0ZG8VvtuEPRys2PDWxNYtV9Y5EwrsnEMqGu2RdwLfbWI14KisBYrDl68h1k0ocCYHcHOOf4sPH93MtBm7CTTwoGL1vxy2Bgxal8GVIwPsnP3vogn7ArnLHJmpD0vLvqeaa4BiHeu1rsDbnr3+3PMRcl9SWfR8VV50vxlp3WB/yxpsX+veLN9limavnZt3HmlaN9hfFR+u2ZH7nNqC72PWgv7Yd9Zl+F/+MaIDv93vbTgj+lieMKzB9rposD2+a55ZZpllFuRW8j+fN/ZtJnG/2QAAAABJRU5ErkJggg==">
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">One set</p>
+                        <span class = "fw-bold d-block">Rp 200.000</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "img/[ save & follow ] - (◍•ᴗ•◍).jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <img class="love" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFBUlEQVR4nO2Yy27idhSHXalV1UXVbkdtNYRLriQD2NwDBmPA3OyQkAtU6jxCX6HNVO17TLuZdt6hVaVMOlLb/UTqZorNHRs7mkySKqeyCSSADQaSSRb8pLO1vvP57+NjI8gss8wyyyy3HSmztybRhX2JyR9KmTwrZfKnYnqXldJ7B1J6Z/84uW0b95p8hLbzBPOEJ+gDIZxhm6HMKY+nWT6UOuTx1LfNYGJ1anBhY9d0TBeeS0zh4pgpwDGdBykj1x5Iabl2QUrtgJjcgVZi+1eR2sZHghN0WCDo3wSCAYGggQ/LlQE+lAEeTyvVDKagEUxdNAOJn/lAdG4i+OONL2PHdJ7vgLfh9y7hZfAreDGxrVSLyl2I1NbTJrn9yQA4znzKE8xPQkQG78Bn2uChK3ClAsl2rSeg7os36/5YdGx4iSmcj7IuJtvgYiIHIpWDVnxLKSG2+UokN5Y61xMJepknmKNR1pvBK/CGXy4KGr441D2x87pbZxPtY5Pne6ynta3L4CLVBm/FNtsVzUKLzIpCdCMmkExciDCiDN8DPsR64xK84ZUrBnVPFGoussG744bR9unC817ru+rWqV7rbfA2vEBuKMVHmBOeYE70W6euwceg4YlB3R2FupuEuouEGkY80zFt8hfDrec0rQvkJXxELpXjomZ9PaFpXYF3kVB3RqDmJKCKERcNDLcOaSD/RPUhHWo922O99yHtt651XKiu9XqfdQUeI6CGhttlx7/RbiC9+8edWfeoW+/CO0JQtYegagseajYgpnZLw61v6rMemtC6S7Yug/dZV+BxqNpwqKwFWe0GkjunWqNR3TpzQ9bJ3uPSb12BD0L1UQAqa4FTzQZaiVxZl/WIlvX0GNajQ61XHdfBO/DrUF71c9p3IJE7nNg6rmHdfyPWobK6DpVVP5St/gPtOxDf+mHghXQT1r06rDu0rSvwVj9UVnxQWvZ+p90AlfX0WtczGkdZH3whqVvHlYdUzboMX17xQXnZC6Vlj0uzAaUJMvuntvXJ1gBt66EB6wp4n/XyileBLy+5/0JGRSCye/qtqy9fU1u3ytZ9XevlJY9S3IIrN7IBQJD3eIJ+oWv5Wtdh3Tm+9XIHvAO/6JbhX8psiN6vpWY4c6ZqfZo1YALrJRl+3nnOLTgxXfDdJkLp76ddvrRH43Xrfk3rpQW5XFCyYPtjwStHCcff5/Hk7+NZjwy3rjYarX3WF9vWFfB5J3AW7AWg6AfIJKkTqc+a64nSVMtXv3WV0Vi+hL8Cv4Q3Y2x1EX2ATBP574D8XTrp8jWJ9ZLFCawJbRUtzrH/dqg34aHwhid+Mu0aoMu6BQPOjJ5wFnsQucnU3CRdc0XPp1kDeq27B6xzZgxYs+M/bg7bulH4bhNOslBzRs4mXQOuj8ZB6xiwRvSMNdryyG2mioZSNUf4zcTWFwatc2YUOKPjLWt0ZG8VvtuEPRys2PDWxNYtV9Y5EwrsnEMqGu2RdwLfbWI14KisBYrDl68h1k0ocCYHcHOOf4sPH93MtBm7CTTwoGL1vxy2Bgxal8GVIwPsnP3vogn7ArnLHJmpD0vLvqeaa4BiHeu1rsDbnr3+3PMRcl9SWfR8VV50vxlp3WB/yxpsX+veLN9limavnZt3HmlaN9hfFR+u2ZH7nNqC72PWgv7Yd9Zl+F/+MaIDv93vbTgj+lieMKzB9rposD2+a55ZZpllFuRW8j+fN/ZtJnG/2QAAAABJRU5ErkJggg==">
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">Dress</p>
+                        <span class = "fw-bold d-block">Rp 150.000</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "img/CANDU (Sudah Terbit Di Playbook).jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <img class="love" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFBUlEQVR4nO2Yy27idhSHXalV1UXVbkdtNYRLriQD2NwDBmPA3OyQkAtU6jxCX6HNVO17TLuZdt6hVaVMOlLb/UTqZorNHRs7mkySKqeyCSSADQaSSRb8pLO1vvP57+NjI8gss8wyyyy3HSmztybRhX2JyR9KmTwrZfKnYnqXldJ7B1J6Z/84uW0b95p8hLbzBPOEJ+gDIZxhm6HMKY+nWT6UOuTx1LfNYGJ1anBhY9d0TBeeS0zh4pgpwDGdBykj1x5Iabl2QUrtgJjcgVZi+1eR2sZHghN0WCDo3wSCAYGggQ/LlQE+lAEeTyvVDKagEUxdNAOJn/lAdG4i+OONL2PHdJ7vgLfh9y7hZfAreDGxrVSLyl2I1NbTJrn9yQA4znzKE8xPQkQG78Bn2uChK3ClAsl2rSeg7os36/5YdGx4iSmcj7IuJtvgYiIHIpWDVnxLKSG2+UokN5Y61xMJepknmKNR1pvBK/CGXy4KGr441D2x87pbZxPtY5Pne6ynta3L4CLVBm/FNtsVzUKLzIpCdCMmkExciDCiDN8DPsR64xK84ZUrBnVPFGoussG744bR9unC817ru+rWqV7rbfA2vEBuKMVHmBOeYE70W6euwceg4YlB3R2FupuEuouEGkY80zFt8hfDrec0rQvkJXxELpXjomZ9PaFpXYF3kVB3RqDmJKCKERcNDLcOaSD/RPUhHWo922O99yHtt651XKiu9XqfdQUeI6CGhttlx7/RbiC9+8edWfeoW+/CO0JQtYegagseajYgpnZLw61v6rMemtC6S7Yug/dZV+BxqNpwqKwFWe0GkjunWqNR3TpzQ9bJ3uPSb12BD0L1UQAqa4FTzQZaiVxZl/WIlvX0GNajQ61XHdfBO/DrUF71c9p3IJE7nNg6rmHdfyPWobK6DpVVP5St/gPtOxDf+mHghXQT1r06rDu0rSvwVj9UVnxQWvZ+p90AlfX0WtczGkdZH3whqVvHlYdUzboMX17xQXnZC6Vlj0uzAaUJMvuntvXJ1gBt66EB6wp4n/XyileBLy+5/0JGRSCye/qtqy9fU1u3ytZ9XevlJY9S3IIrN7IBQJD3eIJ+oWv5Wtdh3Tm+9XIHvAO/6JbhX8psiN6vpWY4c6ZqfZo1YALrJRl+3nnOLTgxXfDdJkLp76ddvrRH43Xrfk3rpQW5XFCyYPtjwStHCcff5/Hk7+NZjwy3rjYarX3WF9vWFfB5J3AW7AWg6AfIJKkTqc+a64nSVMtXv3WV0Vi+hL8Cv4Q3Y2x1EX2ATBP574D8XTrp8jWJ9ZLFCawJbRUtzrH/dqg34aHwhid+Mu0aoMu6BQPOjJ5wFnsQucnU3CRdc0XPp1kDeq27B6xzZgxYs+M/bg7bulH4bhNOslBzRs4mXQOuj8ZB6xiwRvSMNdryyG2mioZSNUf4zcTWFwatc2YUOKPjLWt0ZG8VvtuEPRys2PDWxNYtV9Y5EwrsnEMqGu2RdwLfbWI14KisBYrDl68h1k0ocCYHcHOOf4sPH93MtBm7CTTwoGL1vxy2Bgxal8GVIwPsnP3vogn7ArnLHJmpD0vLvqeaa4BiHeu1rsDbnr3+3PMRcl9SWfR8VV50vxlp3WB/yxpsX+veLN9limavnZt3HmlaN9hfFR+u2ZH7nNqC72PWgv7Yd9Zl+F/+MaIDv93vbTgj+lieMKzB9rposD2+a55ZZpllFuRW8j+fN/ZtJnG/2QAAAABJRU5ErkJggg==">
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">One set</p>
+                        <span class = "fw-bold d-block">Rp 200.000</span>
+                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of special products -->
+
+      <!-- blogs -->
+      <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-dark">Discount Up To 40%</span>
+                    <h2 class = "mt-2 mb-4 text-dark">Grand Sale Offer!</h2>
+                    <a href = "#" class = "btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+     <!-- blogs -->
+     <section id = "blogs" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+            </div>
+
+            <div class = "row g-3">
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "img/Writing In a Voice Other Than Your Own.png" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Tim: </span>Amordeus
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "img/3d Online Shopping Promotion Concept With Smartphone Mockup On Dark Background 3d, Digital Marketing, Shelf, Gift Box Background Image And Wallpaper for Free Download.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Tim: </span>Amordeus
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src = "img/8.jpg" alt = "">
+                    <div class = "card-body px-0">
+                        <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                        <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                        <p class = "card-text">
+                            <small class = "text-muted">
+                                <span class = "fw-bold">Tim: </span>Amordeus
+                            </small>
+                        </p>
+                        <a href = "#" class = "btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of blogs -->
+
+    <!-- about us -->
+    <section id = "about" class = "py-5">
+        <div class = "container">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-5">
+                        <h2 class = "position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <p class = "lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga blanditiis, modi exercitationem quae quam eveniet! Minus labore voluptatibus corporis recusandae accusantium velit, nemo, nobis, nulla ullam pariatur totam quos.</p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "img/WhatsApp Image 2023-07-25 at 20.39.16.jpeg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+     <!-- popular -->
+     <section id = "popular" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Popular Of This Year</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Top Rated</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/fashion.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set hijab</p>
+                            <span>Rp 250.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/@kar_loveee.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set hijab</p>
+                            <span>Rp 250.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/BUCIN MAS ARSITEK.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Dress</p>
+                            <span>Rp 150.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Best Selling</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/CANDU (Sudah Terbit Di Playbook).jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set</p>
+                            <span>Rp 200.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/w.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set</p>
+                            <span>Rp 200.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/u.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set</p>
+                            <span>Rp 200.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">On Sale</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/Mein Stern [ Tom Kaulitz] - Chapitre 1.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set</p>
+                            <span>Rp 200.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/m n n i s.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set</p>
+                            <span>Rp 200.000</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "img/Save=follow.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">One set</p>
+                            <span>Rp 200.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of popular -->
+
+     <!-- newsletter -->
+     <section id = "newsletter" class = "py-5">
+        <div class = "container">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <p class = "text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rem officia accusantium maiores quisquam dolorum?</p>
+                <div class = "input-group mb-3 mt-3">
+                    <input type = "text" class = "form-control" placeholder="Enter Your Email ...">
+                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of newsletter -->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Amordeus</a>
+                    <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Blogs
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Amordeus, Medan, Indonesia
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            attire.support@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +6267898654
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+   
+  </body>
+</html>
